@@ -3,6 +3,7 @@
 ## Quick Start
 
 ### Prerequisites
+
 - Docker Desktop installed (Windows/Mac)
 - Docker Compose v2.0+
 - 4GB RAM minimum
@@ -59,17 +60,20 @@ docker-compose ps
 ### 4 Containers:
 
 1. **airogya-db** (PostgreSQL 16)
+
    - Database with all tables auto-created
    - Port: 5432
    - Volume: Persistent data storage
 
 2. **airogya-server** (Node.js Backend)
+
    - Express API server
    - WebRTC signaling (Socket.IO)
    - Gemini AI integration
    - Port: 5000
 
 3. **airogya-client** (React Frontend)
+
    - Nginx-served production build
    - Optimized static files
    - Port: 3000 (mapped to Nginx :80)
@@ -84,6 +88,7 @@ docker-compose ps
 ## 📋 Common Commands
 
 ### Start Services
+
 ```bash
 # Start all services
 docker-compose up -d
@@ -96,6 +101,7 @@ docker-compose up -d server
 ```
 
 ### Stop Services
+
 ```bash
 # Stop all services
 docker-compose down
@@ -105,6 +111,7 @@ docker-compose down -v
 ```
 
 ### View Logs
+
 ```bash
 # All services
 docker-compose logs -f
@@ -119,6 +126,7 @@ docker-compose logs --tail=100 server
 ```
 
 ### Rebuild Containers
+
 ```bash
 # Rebuild all
 docker-compose up -d --build
@@ -128,6 +136,7 @@ docker-compose up -d --build server
 ```
 
 ### Execute Commands Inside Container
+
 ```bash
 # Access server shell
 docker-compose exec server sh
@@ -140,6 +149,7 @@ docker-compose exec server npm run test
 ```
 
 ### Check Container Status
+
 ```bash
 # List running containers
 docker-compose ps
@@ -155,11 +165,13 @@ docker inspect airogya-server --format='{{.State.Health.Status}}'
 ### Container Won't Start
 
 **Check logs:**
+
 ```bash
 docker-compose logs server
 ```
 
 **Common issues:**
+
 - `.env` file missing → Copy from `.env.docker.example`
 - Port already in use → Change ports in `docker-compose.yml`
 - Build cache issues → Run `docker-compose build --no-cache`
@@ -167,16 +179,19 @@ docker-compose logs server
 ### Database Connection Failed
 
 **Verify database is healthy:**
+
 ```bash
 docker-compose ps postgres
 ```
 
 **Check database logs:**
+
 ```bash
 docker-compose logs postgres
 ```
 
 **Manual test:**
+
 ```bash
 docker-compose exec postgres pg_isready -U consultancy_user
 ```
@@ -184,11 +199,13 @@ docker-compose exec postgres pg_isready -U consultancy_user
 ### Frontend Can't Connect to Backend
 
 **Check environment variables:**
+
 ```bash
 docker-compose exec client cat /usr/share/nginx/html/index.html | grep VITE
 ```
 
 **Verify CORS settings in `server/.env`:**
+
 ```env
 CORS_ORIGIN=http://localhost:3000
 ```
@@ -213,18 +230,21 @@ docker-compose up -d --build
 ### Using Docker Compose on a VPS
 
 1. **Clone repository:**
+
 ```bash
 git clone https://github.com/Abhishek1230987/AIrogya.git
 cd AIrogya
 ```
 
 2. **Create production `.env`:**
+
 ```bash
 cp .env.docker.example .env
 nano .env  # Edit with production values
 ```
 
 3. **Update URLs in `.env`:**
+
 ```env
 GOOGLE_CALLBACK_URL=https://yourdomain.com/api/auth/google/callback
 CLIENT_URL=https://yourdomain.com
@@ -232,17 +252,19 @@ SERVER_URL=https://api.yourdomain.com
 ```
 
 4. **Start with production settings:**
+
 ```bash
 docker-compose up -d --build
 ```
 
 5. **Setup Nginx reverse proxy** (on host machine):
+
 ```nginx
 # /etc/nginx/sites-available/airogya
 server {
     listen 80;
     server_name yourdomain.com;
-    
+
     location / {
         proxy_pass http://localhost:3000;
         proxy_set_header Host $host;
@@ -253,7 +275,7 @@ server {
 server {
     listen 80;
     server_name api.yourdomain.com;
-    
+
     location / {
         proxy_pass http://localhost:5000;
         proxy_http_version 1.1;
@@ -265,6 +287,7 @@ server {
 ```
 
 6. **Setup SSL with Certbot:**
+
 ```bash
 sudo certbot --nginx -d yourdomain.com -d api.yourdomain.com
 ```
@@ -274,6 +297,7 @@ sudo certbot --nginx -d yourdomain.com -d api.yourdomain.com
 ## 📊 Monitoring
 
 ### Check Resource Usage
+
 ```bash
 # CPU and Memory
 docker stats
@@ -283,6 +307,7 @@ docker system df
 ```
 
 ### Database Backups
+
 ```bash
 # Backup database
 docker-compose exec postgres pg_dump -U consultancy_user e_consultancy > backup.sql
@@ -307,12 +332,14 @@ docker-compose exec -T postgres psql -U consultancy_user e_consultancy < backup.
 ## 🎯 Development vs Production
 
 ### Development (Current Setup)
+
 - All services exposed
 - Hot reload disabled (use `npm run dev` locally instead)
 - pgAdmin included
 - Source maps enabled
 
 ### Production Recommendations
+
 - Use environment-specific `.env` files
 - Enable HTTPS
 - Use managed database (RDS, Cloud SQL)

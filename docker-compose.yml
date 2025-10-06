@@ -92,7 +92,7 @@ services:
       - airogya-network
     restart: unless-stopped
     profiles:
-      - tools  # Only start with: docker-compose --profile tools up
+      - tools # Only start with: docker-compose --profile tools up
 
 networks:
   airogya-network:
