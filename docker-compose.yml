@@ -1,8 +1,10 @@
 version: "3.8"
+
 services:
+  # PostgreSQL Database
   postgres:
-    image: postgres:16
-    container_name: e-consultancy-db
+    image: postgres:16-alpine
+    container_name: airogya-db
     environment:
       POSTGRES_DB: e_consultancy
       POSTGRES_USER: consultancy_user
@@ -12,21 +14,90 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./server/database-setup.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./server/database-setup.sql:/docker-entrypoint-initdb.d/01-init.sql
+      - ./server/database-voice-consultations.sql:/docker-entrypoint-initdb.d/02-voice.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U consultancy_user -d e_consultancy"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - airogya-network
+    restart: unless-stopped
+
+  # Node.js Backend Server
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: airogya-server
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: e_consultancy
+      DB_USER: consultancy_user
+      DB_PASSWORD: consultancy_2025
+      # Copy these from your .env file - NEVER commit real secrets!
+      JWT_SECRET: ${JWT_SECRET}
+      SESSION_SECRET: ${SESSION_SECRET}
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      GOOGLE_CALLBACK_URL: ${GOOGLE_CALLBACK_URL}
+      CLIENT_URL: http://localhost:3000
+      CORS_ORIGIN: http://localhost:3000
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server/uploads:/app/uploads
+      - ./server/eng.traineddata:/app/eng.traineddata
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - airogya-network
+    restart: unless-stopped
+
+  # React Frontend Client
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: airogya-client
+    environment:
+      VITE_API_URL: http://localhost:5000
+      VITE_SOCKET_URL: http://localhost:5000
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+    networks:
+      - airogya-network
     restart: unless-stopped
 
   # Optional: pgAdmin for database management
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: e-consultancy-pgadmin
+    container_name: airogya-pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@econsultancy.com
+      PGADMIN_DEFAULT_EMAIL: admin@airogya.com
       PGADMIN_DEFAULT_PASSWORD: admin123
     ports:
       - "8080:80"
     depends_on:
       - postgres
+    networks:
+      - airogya-network
     restart: unless-stopped
+    profiles:
+      - tools  # Only start with: docker-compose --profile tools up
+
+networks:
+  airogya-network:
+    driver: bridge
 
 volumes:
   postgres_data:
+    driver: local
