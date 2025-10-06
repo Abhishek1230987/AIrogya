@@ -4,7 +4,7 @@ import {
   getRoomDetails,
   disconnectUserFromRoom,
 } from "../services/webrtcService.js";
-import { authMiddleware } from "../middleware/auth.js";
+import { authenticateToken as authMiddleware } from "../middleware/auth.js";
 
 const router = express.Router();
 
