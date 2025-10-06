@@ -1,0 +1,113 @@
+{
+  "common": {
+    "appName": "ઇ-કન્સલ્ટન્સી",
+    "login": "લૉગિન",
+    "signup": "સાઇન અપ",
+    "logout": "લૉગઆઉટ",
+    "submit": "સબમિટ કરો",
+    "cancel": "રદ કરો",
+    "save": "સેવ કરો",
+    "edit": "સંપાદિત કરો",
+    "delete": "કાઢી નાખો",
+    "loading": "લોડ થઈ રહ્યું છે...",
+    "error": "ભૂલ",
+    "success": "સફળતા",
+    "back": "પાછળ",
+    "next": "આગળ",
+    "close": "બંધ કરો"
+  },
+  "home": {
+    "selectLanguage": "ભાષા પસંદ કરો",
+    "title": "આધુનિક આરોગ્ય સેવા",
+    "subtitle": "સરળ બનાવેલ",
+    "description": "તમારા ઘરની સુવિધામાંથી આરોગ્ય વ્યાવસાયિકો સાથે જોડાઓ.",
+    "features": {
+      "title": "અમારી સેવાઓ",
+      "voiceConsultation": "વૉઇસ કન્સલ્ટેશન",
+      "voiceConsultationDesc": "તમારી ભાષામાં અમારા AI સાથે વાત કરો",
+      "medicalHistory": "તબીબી ઇતિહાસ",
+      "medicalHistoryDesc": "તમારા આરોગ્ય રેકોર્ડ્સને ટ્રૅક કરો",
+      "appointments": "એપોઇન્ટમેન્ટ્સ",
+      "appointmentsDesc": "ડૉક્ટરની એપોઇન્ટમેન્ટ્સ શેડ્યૂલ કરો",
+      "reports": "તબીબી રિપોર્ટ્સ",
+      "reportsDesc": "રિપોર્ટ્સ અપલોડ અને વિશ્લેષણ કરો"
+    },
+    "cta": {
+      "getStarted": "મફતમાં શરૂ કરો",
+      "learnMore": "વધુ જાણો"
+    }
+  },
+  "auth": {
+    "email": "ઇમેઇલ સરનામું",
+    "password": "પાસવર્ડ",
+    "confirmPassword": "પાસવર્ડની પુષ્ટિ કરો",
+    "name": "સંપૂર્ણ નામ",
+    "phone": "ફોન નંબર",
+    "loginTitle": "તમારા એકાઉન્ટમાં લૉગિન કરો",
+    "signupTitle": "નવું એકાઉન્ટ બનાવો",
+    "forgotPassword": "પાસવર્ડ ભૂલી ગયા?",
+    "rememberMe": "મને યાદ રાખો",
+    "noAccount": "એકાઉન્ટ નથી?",
+    "haveAccount": "પહેલેથી એકાઉન્ટ છે?",
+    "signupLink": "અહીં સાઇન અપ કરો",
+    "loginLink": "અહીં લૉગિન કરો"
+  },
+  "voice": {
+    "title": "વૉઇસ કન્સલ્ટેશન",
+    "subtitle": "તમારા લક્ષણો સ્પષ્ટ રીતે બોલો",
+    "recording": "રેકોર્ડિંગ...",
+    "record": "રેકોર્ડિંગ શરૂ કરો",
+    "stop": "રેકોર્ડિંગ બંધ કરો",
+    "processing": "તમારી વૉઇસ પ્રોસેસ કરી રહ્યું છે...",
+    "transcription": "ટ્રાન્સક્રિપ્શન",
+    "aiResponse": "AI વિશ્લેષણ",
+    "textInput": "અથવા તમારો પ્રશ્ન ટાઇપ કરો",
+    "textPlaceholder": "તમારો તબીબી પ્રશ્ન અહીં ટાઇપ કરો...",
+    "send": "મોકલો",
+    "history": "કન્સલ્ટેશન ઇતિહાસ",
+    "noHistory": "હજી કોઈ કન્સલ્ટેશન નથી",
+    "yourQuery": "તમારો પ્રશ્ન",
+    "medicalAnalysis": "તબીબી વિશ્લેષણ",
+    "aiVerified": "AI ચકાસાયેલ",
+    "viewDetails": "વિગતો જુઓ"
+  },
+  "medicalHistory": {
+    "title": "તબીબી ઇતિહાસ",
+    "personalInfo": "વ્યક્તિગત માહિતી",
+    "allergies": "એલર્જી",
+    "chronicConditions": "ક્રોનિક રોગો",
+    "currentMedications": "વર્તમાન દવાઓ",
+    "pastSurgeries": "ભૂતકાળની સર્જરી",
+    "familyHistory": "કૌટુંબિક તબીબી ઇતિહાસ",
+    "bloodType": "રક્ત પ્રકાર",
+    "emergencyContact": "કટોકટી સંપર્ક",
+    "addAllergy": "એલર્જી ઉમેરો",
+    "addCondition": "રોગ ઉમેરો",
+    "addMedication": "દવા ઉમેરો",
+    "addSurgery": "સર્જરી ઉમેરો",
+    "noData": "ડેટા ઉપલબ્ધ નથી",
+    "updateProfile": "પ્રોફાઇલ અપડેટ કરો"
+  },
+  "dashboard": {
+    "title": "ડેશબોર્ડ",
+    "welcome": "પાછા સ્વાગત છે",
+    "quickActions": "ઝડપી ક્રિયાઓ",
+    "recentActivity": "તાજેતરની પ્રવૃત્તિ",
+    "upcomingAppointments": "આગામી એપોઇન્ટમેન્ટ્સ",
+    "healthStats": "આરોગ્ય આંકડા"
+  },
+  "navigation": {
+    "home": "હોમ",
+    "dashboard": "ડેશબોર્ડ",
+    "voiceConsultation": "વૉઇસ કન્સલ્ટેશન",
+    "medicalHistory": "તબીબી ઇતિહાસ",
+    "appointments": "એપોઇન્ટમેન્ટ્સ",
+    "reports": "રિપોર્ટ્સ",
+    "profile": "પ્રોફાઇલ",
+    "settings": "સેટિંગ્સ"
+  },
+  "disclaimer": {
+    "title": "તબીબી અસ્વીકરણ",
+    "text": "આ AI કન્સલ્ટેશન સાધન ફક્ત માહિતી અને શૈક્ષણિક હેતુઓ માટે ડિઝાઇન કરવામાં આવ્યું છે. તેનો ઉપયોગ વ્યાવસાયિક તબીબી સલાહ, નિદાન અથવા સારવાર માટે વિકલ્પ તરીકે કરવો જોઈએ નહીં. તબીબી સ્થિતિઓ વિશેના કોઈપણ પ્રશ્નો સાથે હંમેશા લાયકાત ધરાવતા આરોગ્ય સંભાળ પ્રદાતાઓનું માર્ગદર્શન લો. કટોકટીના કિસ્સામાં, તાત્કાલિક કટોકટી સેવાઓનો સંપર્ક કરો."
+  }
+}

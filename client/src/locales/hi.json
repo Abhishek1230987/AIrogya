@@ -1,0 +1,113 @@
+{
+  "common": {
+    "appName": "ई-परामर्श",
+    "login": "लॉगिन",
+    "signup": "साइन अप",
+    "logout": "लॉगआउट",
+    "submit": "जमा करें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता",
+    "back": "वापस",
+    "next": "आगे",
+    "close": "बंद करें"
+  },
+  "home": {
+    "selectLanguage": "भाषा चुनें",
+    "title": "आधुनिक स्वास्थ्य सेवा",
+    "subtitle": "सरल बनाया गया",
+    "description": "अपने घर की सुविधा से स्वास्थ्य पेशेवरों से जुड़ें।",
+    "features": {
+      "title": "हमारी सेवाएं",
+      "voiceConsultation": "आवाज परामर्श",
+      "voiceConsultationDesc": "अपनी भाषा में हमारे AI से बात करें",
+      "medicalHistory": "चिकित्सा इतिहास",
+      "medicalHistoryDesc": "अपने स्वास्थ्य रिकॉर्ड ट्रैक करें",
+      "appointments": "अपॉइंटमेंट",
+      "appointmentsDesc": "डॉक्टर अपॉइंटमेंट शेड्यूल करें",
+      "reports": "चिकित्सा रिपोर्ट",
+      "reportsDesc": "रिपोर्ट अपलोड और विश्लेषण करें"
+    },
+    "cta": {
+      "getStarted": "मुफ़्त में शुरू करें",
+      "learnMore": "और जानें"
+    }
+  },
+  "auth": {
+    "email": "ईमेल पता",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "name": "पूरा नाम",
+    "phone": "फ़ोन नंबर",
+    "loginTitle": "अपने खाते में लॉगिन करें",
+    "signupTitle": "नया खाता बनाएं",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "rememberMe": "मुझे याद रखें",
+    "noAccount": "खाता नहीं है?",
+    "haveAccount": "पहले से खाता है?",
+    "signupLink": "यहाँ साइन अप करें",
+    "loginLink": "यहाँ लॉगिन करें"
+  },
+  "voice": {
+    "title": "आवाज परामर्श",
+    "subtitle": "अपने लक्षण स्पष्ट रूप से बोलें",
+    "recording": "रिकॉर्डिंग...",
+    "record": "रिकॉर्डिंग शुरू करें",
+    "stop": "रिकॉर्डिंग बंद करें",
+    "processing": "आपकी आवाज प्रोसेस हो रही है...",
+    "transcription": "प्रतिलेखन",
+    "aiResponse": "AI विश्लेषण",
+    "textInput": "या अपनी क्वेरी टाइप करें",
+    "textPlaceholder": "अपना चिकित्सा प्रश्न यहाँ टाइप करें...",
+    "send": "भेजें",
+    "history": "परामर्श इतिहास",
+    "noHistory": "अभी तक कोई परामर्श नहीं",
+    "yourQuery": "आपका प्रश्न",
+    "medicalAnalysis": "चिकित्सा विश्लेषण",
+    "aiVerified": "AI सत्यापित",
+    "viewDetails": "विवरण देखें"
+  },
+  "medicalHistory": {
+    "title": "चिकित्सा इतिहास",
+    "personalInfo": "व्यक्तिगत जानकारी",
+    "allergies": "एलर्जी",
+    "chronicConditions": "पुरानी बीमारियाँ",
+    "currentMedications": "वर्तमान दवाएं",
+    "pastSurgeries": "पिछली सर्जरी",
+    "familyHistory": "पारिवारिक चिकित्सा इतिहास",
+    "bloodType": "रक्त समूह",
+    "emergencyContact": "आपातकालीन संपर्क",
+    "addAllergy": "एलर्जी जोड़ें",
+    "addCondition": "स्थिति जोड़ें",
+    "addMedication": "दवा जोड़ें",
+    "addSurgery": "सर्जरी जोड़ें",
+    "noData": "कोई डेटा उपलब्ध नहीं",
+    "updateProfile": "प्रोफ़ाइल अपडेट करें"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "welcome": "वापसी पर स्वागत है",
+    "quickActions": "त्वरित कार्य",
+    "recentActivity": "हाल की गतिविधि",
+    "upcomingAppointments": "आगामी अपॉइंटमेंट",
+    "healthStats": "स्वास्थ्य आंकड़े"
+  },
+  "navigation": {
+    "home": "होम",
+    "dashboard": "डैशबोर्ड",
+    "voiceConsultation": "आवाज परामर्श",
+    "medicalHistory": "चिकित्सा इतिहास",
+    "appointments": "अपॉइंटमेंट",
+    "reports": "रिपोर्ट",
+    "profile": "प्रोफ़ाइल",
+    "settings": "सेटिंग्स"
+  },
+  "disclaimer": {
+    "title": "चिकित्सा अस्वीकरण",
+    "text": "यह AI परामर्श उपकरण केवल सूचनात्मक और शैक्षिक उद्देश्यों के लिए डिज़ाइन किया गया है। इसे पेशेवर चिकित्सा सलाह, निदान या उपचार के विकल्प के रूप में उपयोग नहीं किया जाना चाहिए। चिकित्सा स्थितियों के बारे में किसी भी प्रश्न के साथ हमेशा योग्य स्वास्थ्य सेवा प्रदाताओं का मार्गदर्शन लें। आपातकाल की स्थिति में, तुरंत आपातकालीन सेवाओं से संपर्क करें।"
+  }
+}

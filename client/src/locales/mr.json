@@ -1,0 +1,113 @@
+{
+  "common": {
+    "appName": "ई-सल्लामसलत",
+    "login": "लॉगिन",
+    "signup": "साइन अप",
+    "logout": "लॉगआउट",
+    "submit": "सबमिट करा",
+    "cancel": "रद्द करा",
+    "save": "जतन करा",
+    "edit": "संपादित करा",
+    "delete": "हटवा",
+    "loading": "लोड होत आहे...",
+    "error": "त्रुटी",
+    "success": "यशस्वी",
+    "back": "मागे",
+    "next": "पुढे",
+    "close": "बंद करा"
+  },
+  "home": {
+    "selectLanguage": "भाषा निवडा",
+    "title": "आधुनिक आरोग्य सेवा",
+    "subtitle": "सुलभ केले",
+    "description": "आपल्या घराच्या सोयीतून आरोग्य व्यावसायिकांशी संपर्क साधा.",
+    "features": {
+      "title": "आमच्या सेवा",
+      "voiceConsultation": "आवाज सल्लामसलत",
+      "voiceConsultationDesc": "आपल्या भाषेत आमच्या AI शी बोला",
+      "medicalHistory": "वैद्यकीय इतिहास",
+      "medicalHistoryDesc": "आपल्या आरोग्य नोंदींचा मागोवा घ्या",
+      "appointments": "भेटी",
+      "appointmentsDesc": "डॉक्टरांच्या भेटी शेड्यूल करा",
+      "reports": "वैद्यकीय अहवाल",
+      "reportsDesc": "अहवाल अपलोड करा आणि विश्लेषण करा"
+    },
+    "cta": {
+      "getStarted": "विनामूल्य सुरू करा",
+      "learnMore": "अधिक जाणून घ्या"
+    }
+  },
+  "auth": {
+    "email": "ईमेल पत्ता",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्डची पुष्टी करा",
+    "name": "पूर्ण नाव",
+    "phone": "फोन नंबर",
+    "loginTitle": "आपल्या खात्यात लॉगिन करा",
+    "signupTitle": "नवीन खाते तयार करा",
+    "forgotPassword": "पासवर्ड विसरलात?",
+    "rememberMe": "मला लक्षात ठेवा",
+    "noAccount": "खाते नाही?",
+    "haveAccount": "आधीच खाते आहे?",
+    "signupLink": "येथे साइन अप करा",
+    "loginLink": "येथे लॉगिन करा"
+  },
+  "voice": {
+    "title": "आवाज सल्लामसलत",
+    "subtitle": "आपली लक्षणे स्पष्टपणे सांगा",
+    "recording": "रेकॉर्डिंग...",
+    "record": "रेकॉर्डिंग सुरू करा",
+    "stop": "रेकॉर्डिंग थांबवा",
+    "processing": "आपला आवाज प्रक्रिया करत आहे...",
+    "transcription": "लिप्यंतरण",
+    "aiResponse": "AI विश्लेषण",
+    "textInput": "किंवा आपला प्रश्न टाइप करा",
+    "textPlaceholder": "आपला वैद्यकीय प्रश्न येथे टाइप करा...",
+    "send": "पाठवा",
+    "history": "सल्लामसलत इतिहास",
+    "noHistory": "अद्याप सल्लामसलत नाही",
+    "yourQuery": "आपला प्रश्न",
+    "medicalAnalysis": "वैद्यकीय विश्लेषण",
+    "aiVerified": "AI सत्यापित",
+    "viewDetails": "तपशील पहा"
+  },
+  "medicalHistory": {
+    "title": "वैद्यकीय इतिहास",
+    "personalInfo": "वैयक्तिक माहिती",
+    "allergies": "ऍलर्जी",
+    "chronicConditions": "दीर्घकालीन आजार",
+    "currentMedications": "सध्याची औषधे",
+    "pastSurgeries": "मागील शस्त्रक्रिया",
+    "familyHistory": "कौटुंबिक वैद्यकीय इतिहास",
+    "bloodType": "रक्त गट",
+    "emergencyContact": "आणीबाणी संपर्क",
+    "addAllergy": "ऍलर्जी जोडा",
+    "addCondition": "आजार जोडा",
+    "addMedication": "औषध जोडा",
+    "addSurgery": "शस्त्रक्रिया जोडा",
+    "noData": "डेटा उपलब्ध नाही",
+    "updateProfile": "प्रोफाइल अपडेट करा"
+  },
+  "dashboard": {
+    "title": "डॅशबोर्ड",
+    "welcome": "परत स्वागत आहे",
+    "quickActions": "जलद क्रिया",
+    "recentActivity": "अलीकडील क्रियाकलाप",
+    "upcomingAppointments": "येणाऱ्या भेटी",
+    "healthStats": "आरोग्य आकडेवारी"
+  },
+  "navigation": {
+    "home": "मुख्यपृष्ठ",
+    "dashboard": "डॅशबोर्ड",
+    "voiceConsultation": "आवाज सल्लामसलत",
+    "medicalHistory": "वैद्यकीय इतिहास",
+    "appointments": "भेटी",
+    "reports": "अहवाल",
+    "profile": "प्रोफाइल",
+    "settings": "सेटिंग्ज"
+  },
+  "disclaimer": {
+    "title": "वैद्यकीय अस्वीकरण",
+    "text": "हे AI सल्लामसलत साधन केवळ माहिती आणि शैक्षणिक उद्देशांसाठी डिझाइन केले आहे. हे व्यावसायिक वैद्यकीय सल्ला, निदान किंवा उपचारांसाठी पर्याय म्हणून वापरले जाऊ नये. वैद्यकीय परिस्थितींबद्दल कोणत्याही प्रश्नांसह नेहमी पात्र आरोग्य सेवा प्रदात्यांचे मार्गदर्शन घ्या. आणीबाणीच्या बाबतीत, ताबडतोब आणीबाणी सेवांशी संपर्क साधा."
+  }
+}

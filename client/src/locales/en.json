@@ -1,0 +1,113 @@
+{
+  "common": {
+    "appName": "E-Consultancy",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close"
+  },
+  "home": {
+    "selectLanguage": "Select Language",
+    "title": "Modern Healthcare",
+    "subtitle": "Made Simple",
+    "description": "Connect with healthcare professionals from the comfort of your home.",
+    "features": {
+      "title": "Our Services",
+      "voiceConsultation": "Voice Consultation",
+      "voiceConsultationDesc": "Speak to our AI in your language",
+      "medicalHistory": "Medical History",
+      "medicalHistoryDesc": "Track your health records",
+      "appointments": "Appointments",
+      "appointmentsDesc": "Schedule doctor appointments",
+      "reports": "Medical Reports",
+      "reportsDesc": "Upload and analyze reports"
+    },
+    "cta": {
+      "getStarted": "Get Started Free",
+      "learnMore": "Learn More"
+    }
+  },
+  "auth": {
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "loginTitle": "Login to Your Account",
+    "signupTitle": "Create New Account",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signupLink": "Sign up here",
+    "loginLink": "Login here"
+  },
+  "voice": {
+    "title": "Voice Consultation",
+    "subtitle": "Speak your symptoms clearly",
+    "recording": "Recording...",
+    "record": "Start Recording",
+    "stop": "Stop Recording",
+    "processing": "Processing your voice...",
+    "transcription": "Transcription",
+    "aiResponse": "AI Analysis",
+    "textInput": "Or Type Your Query",
+    "textPlaceholder": "Type your medical question here...",
+    "send": "Send",
+    "history": "Consultation History",
+    "noHistory": "No consultations yet",
+    "yourQuery": "Your Question",
+    "medicalAnalysis": "Medical Analysis",
+    "aiVerified": "AI Verified",
+    "viewDetails": "View Details"
+  },
+  "medicalHistory": {
+    "title": "Medical History",
+    "personalInfo": "Personal Information",
+    "allergies": "Allergies",
+    "chronicConditions": "Chronic Conditions",
+    "currentMedications": "Current Medications",
+    "pastSurgeries": "Past Surgeries",
+    "familyHistory": "Family Medical History",
+    "bloodType": "Blood Type",
+    "emergencyContact": "Emergency Contact",
+    "addAllergy": "Add Allergy",
+    "addCondition": "Add Condition",
+    "addMedication": "Add Medication",
+    "addSurgery": "Add Surgery",
+    "noData": "No data available",
+    "updateProfile": "Update Profile"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "quickActions": "Quick Actions",
+    "recentActivity": "Recent Activity",
+    "upcomingAppointments": "Upcoming Appointments",
+    "healthStats": "Health Statistics"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "voiceConsultation": "Voice Consultation",
+    "medicalHistory": "Medical History",
+    "appointments": "Appointments",
+    "reports": "Reports",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "disclaimer": {
+    "title": "Medical Disclaimer",
+    "text": "This AI consultation tool is designed for informational and educational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the guidance of qualified healthcare providers with any questions regarding medical conditions. In case of emergency, contact emergency services immediately."
+  }
+}
